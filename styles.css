@@ -1,21 +1,8 @@
-/* General Reset */
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
 * {
     outline: 1px solid red;
 }
 
 html, body {
-/*  font-family: Verdana, sans-serif;
-    background-color: #222;
-    color: #ddd;
-    line-height: 1.6;   */
-
-    /*overflow-x: hidden;*/
     background-color: #dbdbdb;                              /* Sets a light gray background */
     color: #333;                                            /* Sets a dark gray text color for readability */
     font-family: Verdana, sans-serif;                       /* Sets a clean, sans-serif font for */
@@ -87,7 +74,6 @@ nav {
     width: 0;                                               /* Initial width for progress bar */
     background-color: #4caf50;                              /* Set background color for progress bar to green */
     margin-top: 0;                                          /* Remove top margin for progress bar */
-    /*position: sticky;*/                                       /* Make progress bar sticky */
     top: 3.125rem;                                              /* Stick it to the top of the viewport */
     z-index: 999;
 }
