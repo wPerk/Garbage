@@ -41,18 +41,8 @@ document.addEventListener('click', function (event) {
 });
 
 window.onscroll = function () {
-    const progressBar = document.getElementById("myProgressBar");
-
     if (progressBar) {
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (scrollTop / scrollHeight) * 100;
-
-        console.log("ScrollTop:", scrollTop);
-        console.log("ScrollHeight:", scrollHeight);
-        console.log("Scrolled %:", scrolled);
-
-        progressBar.style.width = scrolled + "%";
+        updateProgressBar();
     } else {
         console.error("Progress bar with ID 'myProgressBar' not found on this page.");
     }
