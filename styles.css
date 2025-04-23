@@ -21,7 +21,6 @@ html, body {
     font-family: Verdana, sans-serif;                       /* Sets a clean, sans-serif font for */
     padding: 0;                                             /* Removes default padding around the page */
     margin: 0;                                              /* Removes default padding around the page */
-    height: 100%;
 }
 
 header {
@@ -30,13 +29,14 @@ header {
     text-align: center;                                     /* Centers the header content */
     padding: 1.875rem 1.25rem;                                     /* Adds spacing inside the header */
     font-size: 1.5rem;                                        /* Increases font size for better visibility */
+    z-index: 10;
 }
 
 /* Navbar Properties */
 nav {
     background-color: #444;                                 /* Set background color for navigation */
     padding: 0.625rem;                                      /* Add padding to navigation */
-    z-index: 10;
+    z-index: 1000;
 }
     nav ul {
         list-style-type: none;                              /* Remove default list style for navigation ul */
@@ -71,7 +71,7 @@ nav {
     padding: 0.625rem 1.25rem;                                     /* Add padding to navbar */
     position: sticky;                                       /* Make navbar sticky */
     top: 0;                                                 /* Stick it to the top of the viewport */
-    z-index: 10;
+    z-index: 1000;
 }
 
 /* Progress Bar Properties */
@@ -80,16 +80,16 @@ nav {
     background-color: #f1f1f1;                              /* Set background color for progress container to white */
     position: sticky;                                       /* Make progress container sticky */
     top: 3.125rem;                                              /* Stick it to the top of the viewport */
-    z-index: 10;
+    z-index: 999;
 }
 .progress-bar {
     height: 0.3125rem;                                            /* Set height for progress bar */
     width: 0;                                               /* Initial width for progress bar */
     background-color: #4caf50;                              /* Set background color for progress bar to green */
     margin-top: 0;                                          /* Remove top margin for progress bar */
-    position: sticky;                                       /* Make progress bar sticky */
+    /*position: sticky;*/                                       /* Make progress bar sticky */
     top: 3.125rem;                                              /* Stick it to the top of the viewport */
-    z-index: 10;
+    z-index: 999;
 }
 
 /* Menu icon */
