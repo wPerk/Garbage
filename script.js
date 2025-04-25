@@ -2,6 +2,10 @@ const menuIcon = document.querySelector('.menu-icon');
 const dropdown = document.querySelector('.dropdown');
 const progressBar = document.getElementById('myProgressBar');
 
+function goHome() {
+    window.location.href = "home.html"; // Redirect to home page
+}
+
 // Function to toggle the visibility of the dropdown
 function toggleDropdown() {
     dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
